@@ -1,0 +1,17 @@
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+split_all_comma_separated_values = false
+magic_trailing_comma = false
+force_single_line = true
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+  \.git|
+  \.venv|
+  venv|
+  build|
+  dist
+)/
+'''
